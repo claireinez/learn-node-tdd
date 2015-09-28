@@ -40,7 +40,7 @@ Now you can run your tests simply by using the command `npm run test`.
 
 Start by requiring Tape at the top of your `tests.js` file:
 
-`var test = require('Tape');`
+`var test = require('tape');`
 
 Also make sure you require any relevant files, so you have access to what you need to test. If you're testing the server, require the files where you set that up.
 
