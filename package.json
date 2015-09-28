@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/tape ./test/*"
+    "test": "./node_modules/.bin/tape ./test/*",
+    "coverage": "istanbul cover ./node_modules/.bin/tape ./test/*"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,10 @@
   },
   "homepage": "https://github.com/nofootnotes/learn-node-tdd",
   "devDependencies": {
+    "istanbul": "^0.3.21",
+    "jshint": "^2.8.0",
+    "qunit-tap": "^1.5.0",
+    "qunitjs": "^1.19.0",
     "shot": "^1.6.1",
     "tape": "^4.2.0"
   },

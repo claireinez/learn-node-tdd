@@ -1,0 +1,5 @@
+language:node_js
+node_js:-0.12
+addons:
+code_climate:
+repo_token: 280d6cac3e8744f75814053b484da641799003d6236e68d2c2bee199951c5132
