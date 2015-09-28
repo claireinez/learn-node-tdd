@@ -17,8 +17,7 @@ var server = (function() {
 
   return {
       handler : handler
-  }
-
+  };
 }());
 
 module.exports = server;
