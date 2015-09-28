@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fcscripters/learn-node-tdd.svg?branch=master)](https://travis-ci.org/fcscripters/learn-node-tdd)
+
 # Learn Node TDD
 
 This is an introduction to Test Driven Development for Node.js. This guide includes details on installing Tape, setting up a testing environment, writing a basic server test, and installing pre-commit hooks with Travis and Code Climate.
