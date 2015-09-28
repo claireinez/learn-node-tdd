@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/fcscripters/learn-node-tdd.svg?branch=master)](https://travis-ci.org/fcscripters/learn-node-tdd)
+[![Code Climate](https://codeclimate.com/github/fcscripters/learn-node-tdd/badges/gpa.svg)](https://codeclimate.com/github/fcscripters/learn-node-tdd)
+[![Test Coverage](https://codeclimate.com/github/fcscripters/learn-node-tdd/badges/coverage.svg)](https://codeclimate.com/github/fcscripters/learn-node-tdd/coverage)
 
 # Learn Node TDD
 
