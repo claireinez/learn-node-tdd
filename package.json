@@ -1,34 +1,26 @@
 {
   "name": "learn-node-tdd",
   "version": "1.0.0",
-  "description": "Learn TDD with node.js",
-  "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "node tdd tutorial",
+  "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/tape ./test/*"
+    "test": "./node_modules/.bin/tape ./test/*",
+    "coverage": "istanbul cover ./node_modules/.bin/tape ./test/*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nofootnotes/learn-node-tdd.git"
+    "url": "git+https://github.com/nofootnotes/learn-node-tdd.git"
   },
-  "keywords": [
-    "tdd",
-    "node",
-    "tape"
-  ],
-  "author": "nofootnotes, msmichellegar",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nofootnotes/learn-node-tdd/issues"
   },
-  "homepage": "https://github.com/nofootnotes/learn-node-tdd",
+  "homepage": "https://github.com/nofootnotes/learn-node-tdd#readme",
   "devDependencies": {
+    "codeclimate-test-reporter": "^0.1.1",
+    "istanbul": "^0.3.21",
     "shot": "^1.6.1",
     "tape": "^4.2.0"
-  },
-  "dependencies": {
-    "http": "0.0.0"
   }
 }

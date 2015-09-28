@@ -1,16 +1,23 @@
-var http = require('http');
-var port = process.env.PORT || 8000;
+var server = (function() {
+  var http = require('http');
 
-function handler(request, response) {
-	var url = request.url;
-	if (url.length === 1) {
-		response.writeHead(200, {"Content-Type": "text/html"});
-		response.end("HELLO WORLD!");
-	}
-}
+  var port = 8000;
 
-http.createServer(handler).listen(port);
+  function handler(request, response) {
+    if (request.url.length === 1) {
+      response.writeHead(200, {"Content-Type" : "text/html"});
+      response.end('Hello world');
+    } else {
+      response.writeHead(404, {"Content-Type" : "text/html"});
+      response.end('404: page not found');
+    }
+  }
 
-console.log('node http server listening on http://localhost:' + port);
+  http.createServer(handler);//.listen(port);
 
-module.exports = handler;
+  return {
+      handler : handler
+  };
+}());
+
+module.exports = server;
