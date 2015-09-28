@@ -1,3 +1,5 @@
+
+
 var http = require('http');
 var port = process.env.PORT || 8000;
 
@@ -9,7 +11,7 @@ function handler(request, response) {
 	}
 }
 
-http.createServer(handler).listen(port);
+http.createServer(handler);//.listen(port);
 
 console.log('node http server listening on http://localhost:' + port);
 
