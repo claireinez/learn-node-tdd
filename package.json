@@ -4,7 +4,7 @@
   "description": "node tdd tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/tape ./test/*"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nofootnotes/learn-node-tdd/issues"
   },
-  "homepage": "https://github.com/nofootnotes/learn-node-tdd#readme"
+  "homepage": "https://github.com/nofootnotes/learn-node-tdd#readme",
+  "devDependencies": {
+    "shot": "^1.6.1",
+    "tape": "^4.2.0"
+  }
 }
