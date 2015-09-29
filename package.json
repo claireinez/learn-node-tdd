@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "codeclimate": "CODECLIMATE_REPO_TOKEN=280d6cac3e8744f75814053b484da641799003d6236e68d2c2bee199951c5132 ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info",    
+    "codeclimate": "CODECLIMATE_REPO_TOKEN=280d6cac3e8744f75814053b484da641799003d6236e68d2c2bee199951c5132 codeclimate-test-reporter < ./coverage/lcov.info",
     "test": "./node_modules/.bin/tape ./test/*",
     "coverage": "istanbul cover ./node_modules/.bin/tape ./test/*"
   },
@@ -36,6 +36,7 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
+    "codecov.io": "^0.1.6",
     "http": "0.0.0"
   }
 }

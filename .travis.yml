@@ -7,3 +7,8 @@ node_js:
   - 0.12
 after_script:
   - ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info
+
+before_install:
+  - pip install --user codecov
+after_success:
+  - codecov --file coverage/lcov.info --disable search
