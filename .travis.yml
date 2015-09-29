@@ -5,3 +5,5 @@ addons:
 language: node_js
 node_js:
   - 0.12
+after_script:
+  - codeclimate-test-reporter < ./coverage/lcov.info
