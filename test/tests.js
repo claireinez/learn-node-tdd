@@ -23,15 +23,15 @@ tape("check to see if the server is running ok", function (t) {
 //     t.end();
 //   });
 // });
-
-tape("Is the name of the person in H1 tag being returned in the URL after /name/(NAME OF PERSON)", function(t){
-
-  // var url = request.url;
-  // var name = url.split('/')[2].toString();
-  shot.inject(handler, {method: 'get', url: '/name/sohil/'},function(res){
-    var result = (res.payload.indexOf('<h1>sohil</h1>') !== -1);
-    // var documentName = document.getElementsByTagName('h1').innerText;
-    t.equal(result,true, "success!");
-    t.end();
-  });
-});
+// 
+// tape("Is the name of the person in H1 tag being returned in the URL after /name/(NAME OF PERSON)", function(t){
+//
+//   // var url = request.url;
+//   // var name = url.split('/')[2].toString();
+//   shot.inject(handler, {method: 'get', url: '/name/sohil/'},function(res){
+//     var result = (res.payload.indexOf('<h1>sohil</h1>') !== -1);
+//     // var documentName = document.getElementsByTagName('h1').innerText;
+//     t.equal(result,true, "success!");
+//     t.end();
+//   });
+// });
